@@ -1,3 +1,5 @@
+
+// js code for nav bar hamburger
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -13,26 +15,52 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 
 
-let imgWrapper = document.querySelectorAll('.img-wrapper'),
-    dots = document.querySelectorAll('.dots > .dot'),
-    i = 0
 
-function reset() {
-  for(let i = 0; i < imgWrapper.length; i++) {
-    imgWrapper[i].style.display = 'none'
-    dots[i].classList.remove('active')
-  }
+// js code for landing page
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.querySelector('.dots');
+
+let currentSlide = 0;
+
+function showSlide(slideIndex) {
+  slides.forEach((slide) => {
+    slide.style.display = 'none';
+  });
+
+  slides[slideIndex].style.display = 'block';
 }
 
-function autoSlide() {
-  if(i >= imgWrapper.length) {
-    i = 0
+function showNextSlide() {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
   }
-  reset()
-  imgWrapper[i].style.display = 'block'
-  dots[i].classList.add('active')
-  i++
-  setTimeout(autoSlide, 1500)
+  showSlide(currentSlide);
+  updateActiveDot();
 }
-autoSlide()
 
+function updateActiveDot() {
+  const dots = document.querySelectorAll('.dots span');
+  dots.forEach((dot, index) => {
+    dot.classList.remove('active');
+    if (index === currentSlide) {
+      dot.classList.add('active');
+    }
+  });
+}
+
+slides[currentSlide].style.display = 'block';
+dotsContainer.innerHTML = '<span class="active"></span>'.repeat(slides.length);
+
+const slideInterval = setInterval(showNextSlide, 4000);
+
+dotsContainer.addEventListener('click', (event) => {
+  if (event.target.tagName === 'SPAN') {
+    const dotIndex = Array.from(event.target.parentNode.children).indexOf(event.target);
+    currentSlide = dotIndex;
+    showSlide(currentSlide);
+    updateActiveDot();
+    clearInterval(slideInterval);
+    slideInterval = setInterval(showNextSlide, 4000);
+  }
+});
