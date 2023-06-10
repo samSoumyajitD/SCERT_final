@@ -312,7 +312,7 @@ button:active {
   }
   .sec2{
     color: #79E0EE;
-    padding-top: 4rem;
+    
    
     
     font-family: "Roboto", sans-serif;
@@ -327,7 +327,7 @@ button:active {
     
     
     padding-left: 40%;
-    padding-bottom: 4rem;
+   padding-bottom: 2rem;
 
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1.5px;
