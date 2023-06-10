@@ -304,7 +304,10 @@ button:active {
     background-color: #fff;
     flex-direction: column;
     
-    padding-right: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
   }
   .sec2{
