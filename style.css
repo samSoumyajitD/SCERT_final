@@ -7,9 +7,10 @@
 /*---------------------------------------------------------------------navbar----------------------------------------------------------------*/
 header{
     background-color:#ABD9FF;
-    position: relative;
+    position: fixed;
   z-index: 1;
   border-bottom: 1px solid #fff;
+  width: 100%;
 }
 li{
     list-style: none;
@@ -26,6 +27,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    
 }
 .nav-menu{
     display: flex;
@@ -107,7 +109,6 @@ ul li ul.sub-menu{
   display: flex;
 }
 
-
 .image-carousel {
   width: 70%;
   position: relative;
@@ -118,10 +119,8 @@ ul li ul.sub-menu{
 }
 
 .slide img {
-
   width: 69.3vw;
   height: 70vh;
-  
 }
 
 .dots {
@@ -252,67 +251,43 @@ button:active {
  /* -------------------------------------------------END of Button section------------------------------------------------- */
 
   /* -------------------------------------------------About section--------------------------------------------- */
-  .hero {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .asection{
     background-color:#ABD9FF;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    
+    text-align: left;
+    padding-left: 10%;
   }
-  
-  .hero h1 {
- 
+  .about{
+    color: #fff;
+    padding-top: 4rem;
+   
     
     font-family: "Roboto", sans-serif;
-    color: #fff;
-    font-size: 2rem;
-    padding-left: .5rem;
-    padding-bottom: 25px;
   }
-  .hero p {
-    font-family: "Montserrat", sans-serif;
-    color:#000080;
-    font-size: 1.2em;
-    padding-left: 10px;
-    padding-right: 4rem;
-  }
-  
-  .image{
-    background-color: #79E0EE;
-  
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    width: 50vw;
-    height: 50vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  .acontent{
+color: #000080;
     
-  }
+    padding-top: 1rem;
+    
+    
+    padding-right: 40%;
+    padding-bottom: 4rem;
 
-  
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+  }
   /* -------------------------------------------------About section ENDS--------------------------------------------- */
 
-
-  
   /*---------------------------------------------section 2 code---------------------------------------------*/
 
   .section2{
-   text-align: right;
     background-color: #fff;
-    flex-direction: column;
-    
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    text-align: right;
+    padding-right: 10%;
 
   }
   .sec2{
     color: #79E0EE;
-    
+    padding-top: 4rem;
    
     
     font-family: "Roboto", sans-serif;
@@ -320,27 +295,18 @@ button:active {
 
   }
   .scontent{
-    
     color: #000080;
     
     padding-top: 1rem;
     
     
     padding-left: 40%;
-   padding-bottom: 2rem;
+    padding-bottom: 4rem;
 
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1.5px;
 
   }
-
- 
-
-
-
-
-
-
 
    /*---------------------------------footer section----------------- */
    .footer{
@@ -408,29 +374,6 @@ button:active {
         
         padding: 8px;
        
-     }
-     /*------------------About Section Code-------------------*/
-     .hero {
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-     
-      width: 85%;
-     }
-   .image {
-    
-      order: 1;
-      margin-bottom: 40px;
-     }
-   .hero div {
-      order: 2;
-      height: auto;
-      margin-bottom: 15px;
-      margin-right: 0;
-     }
-   .hero p {
-      padding: 0 50px 0 50px;
-      margin-bottom: 50px;
      }
      /*---------------------------- images and landing page content ------------------------*/
      .container {

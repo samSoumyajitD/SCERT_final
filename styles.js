@@ -52,7 +52,7 @@ function updateActiveDot() {
 slides[currentSlide].style.display = 'block';
 dotsContainer.innerHTML = '<span class="active"></span>'.repeat(slides.length);
 
-const slideInterval = setInterval(showNextSlide, 4000);
+const slideInterval = setInterval(showNextSlide, 2000);
 
 dotsContainer.addEventListener('click', (event) => {
   if (event.target.tagName === 'SPAN') {
@@ -61,6 +61,6 @@ dotsContainer.addEventListener('click', (event) => {
     showSlide(currentSlide);
     updateActiveDot();
     clearInterval(slideInterval);
-    slideInterval = setInterval(showNextSlide, 4000);
+    slideInterval = setInterval(showNextSlide, 1500);
   }
 });
