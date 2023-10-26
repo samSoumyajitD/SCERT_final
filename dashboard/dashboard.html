@@ -1,0 +1,155 @@
+
+<!-- <?php
+
+?> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+   <div class="sidebar">
+    
+        
+         <img src="../assets/logo.png" alt="" class="logo">
+          
+      <ul>
+        <li class='active'>
+          <a href="#">
+           <i class="fa-solid fa-chart-column"></i>
+           <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-building-user"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>
+               Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+           <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+    <nav>
+        <!-- logout -->
+      <p>
+      
+        <span class="fonticon"><i class="fa-solid fa-right-from-bracket fa-lg"></i></span>
+        <span class="hide"><a href="../index.html" >LogOut</a></span>
+      </p>
+    
+       
+       
+      <!-- return to home from dashboard -->
+      <p>
+        <span class="fonticon"><i class='fa fa-home'></i></span>
+        <span class="hide"><a href="../newIndex.html" >Home</a></span>
+      </p>
+      <!-- profile image -->
+      <div class="profile-img">
+        <img src="https://xsgames.co/randomusers/assets/avatars/male/46.jpg" alt="profile img">
+      </div>
+    </nav>
+      
+    <!--  Main heading  -->
+      <div class="container">
+        <header>
+        <h1>Welcome back, ABC</h1>
+        <span>Get an overview of your progress</span>
+      </header>
+      </div>
+      
+
+
+      <!-- cards container -->
+      <div class="cards-container">
+         
+        <div class="card card1">
+          <div id="chart-1">
+            <H2> Details(WorkPlace)</H2>
+            <br>
+            <H4>Name : <span class="name">XYZ ABC</span></H4>
+            <br>
+            <H4>Enrollment Number : <span class="enrll">21ABCD</span></H4>
+            <br>
+            <H4>Role : <span class="role">Teacher</span></H4>
+            <br>
+            <h4>Email : <span class="mail">example</span> </h4>
+            <br>
+            <h4>Institute Name: <span class="instname">example</span> </h4>
+            <br>
+            <h4>Sex : <span class="sex">M</span> </h4>
+
+
+
+      
+          </div>
+        </div>
+        
+        <div class="card card2">      
+          <div id="chart-2">
+            <H2> Qualifications</H2>
+            <br>
+            <H4>Training Name : <span class="train">ZXCV ABDC</span></H4>
+            <br>
+            <H4>Training Number : <span class="enrll">21ABCD</span></H4>
+            <br>
+            <H4>No. of Training : <span class="role">6</span></H4>
+            <br>
+            <h4>Serial No. : <span class="mail">X</span> </h4>
+          </div>
+        </div>
+        <div class="card card0">
+          <div id="chart-0">
+            <H2> Experience</H2>
+            <br>
+            <H4>Training Name : <span class="train">ZXCV ABDC</span></H4>
+            <br>
+            <H4>Training Number : <span class="enrll">21ABCD</span></H4>
+            <br>
+            <H4>No. of Training : <span class="role">6</span></H4>
+            <br>
+            <h4>Serial No. : <span class="mail">X</span> </h4>
+          </div>
+        </div>
+       
+        <div class="card card4">
+          <div id="chart-4">
+            <H2> Rating</H2>
+            <!-- <br>
+            <H4>Training Name : <span class="train">ZXCV ABDC</span></H4>
+            <br>
+            <H4>Training Number : <span class="enrll">21ABCD</span></H4> -->
+            <br>
+            <H4>Rating out of 10 : <span class="role">7</span></H4>
+            <!-- <br>
+            <h4>Serial No. : <span class="mail">X</span> </h4> -->
+          </div>
+        </div>
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
